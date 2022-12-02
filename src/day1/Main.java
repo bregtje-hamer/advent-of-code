@@ -11,6 +11,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         readFile();
     }
+
     private static void readFile() throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader("src/day1/calories.txt"));
 
@@ -31,7 +32,7 @@ public class Main {
         findMax(totalCalories);
     }
 
-    private static void findMax( List<Integer> totalCalories ) {
+    private static void findMax(List<Integer> totalCalories) {
         int top3 = 0;
         for (int i = 1; i < 4; i++) {
             System.out.println("Maximum element " + i + ": " + Collections.max(totalCalories));
