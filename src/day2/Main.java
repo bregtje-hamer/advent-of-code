@@ -15,7 +15,7 @@ public class Main {
     }
 
     private static void readFile(Map<String, Integer> strategy) {
-        try (Stream<String> stream = Files.lines(Paths.get("src/day2/items.txt"))) {
+        try (Stream<String> stream = Files.lines(Paths.get("src/day2/assignment.txt"))) {
             final int result = stream
                     .map(strategy::get)
                     .mapToInt(Integer::intValue)
